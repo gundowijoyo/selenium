@@ -1,0 +1,8 @@
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options
+
+options = Options()
+# options.headless = True  # jangan pakai dulu
+driver = webdriver.Chrome(options=options)
+driver.get("https://example.com")
